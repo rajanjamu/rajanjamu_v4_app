@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    // background: #888;
+    // -webkit-transition: all 0.5s ease;
+    // -moz-transition: all 0.5s ease;
+    // -o-transition: all 0.5s ease;
+    // transition: all 0.5s ease;
+
+    border-right: 1px solid $color-clouds;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & > .sidebar-brand {
+        // height: 65px;
+        text-indent: 11%;
+        font-size: 3rem;
+        line-height: 60px;
+        margin-top: 7%;
+        margin-bottom: 7%;
+
+        a {
+            color: $color-black;
+
+            &:link, &:visited {
+                text-decoration: none;
+                color: $color-black;
+            }
+
+            &:hover {
+                color: $color-light-black;
+                background: none;
+            }
+        }
+    }
+
+    .panel-group {
+        border-style: none;
+        margin-bottom: 40%;
+
+        .panel.panel-default {
+            // border-top: 1px solid $color-clouds;
+            border-style: none;
+            border-radius: 0;
+            text-indent: 5%;
+            margin: 0;
+
+            .panel-heading {
+                background-color: $color-white;
+                padding: 0;
+                border-top: 1px solid $color-clouds;
+                .panel-title {
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: $color-black;
+                        padding: 1%;
+                        line-height: 40px;
+                        font-size: 1.7rem;
+
+                        .glyphicon {
+                            padding-right: 8%;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #fff;
+                            background: $color-blue;
+                        }
+
+                        &:active, &:focus {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .panel-collapse {
+                .panel-body {
+                    padding: 0;
+                    .list-group {
+                        width: 100%;
+                        margin: 0;
+                        border: 0;
+                        border-radius: 0;
+                        text-indent: 25%;
+
+                        .list-group-item {
+                            border: 0;
+                            border-radius: 0;
+                            padding: 3%;
+                            margin: 0;
+                            line-height: 30px;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-about {
+        text-align: center;
+        background-color: $color-light-clouds;
+        .about-img {
+            width: 35%;
+            border-radius: 50%;
+            margin-top: -17%;
+            border: 7px solid $color-white;
+        }
+
+        .about-title {
+            font-size: 2rem;
+            padding: 3%;
+        }
+        .about-desc {
+            font-size: 1.6rem;
+            padding: 3%;
+        }
+
+        .sidebar-social {
+            text-align: center;
+            margin-top: 5%;
+            .icon-img {
+                width: 16.66%;
+                opacity: 0.3;
+                transition: opacity 0.5s ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media(min-width:992px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+
+        #sidebar-wrapper {
+            width: 0;
+        }
+
+        #page-content-wrapper {
+            position: relative;
+            margin-right: 0;
+        }
+    }
+
+    #sidebar-wrapper {
+        width: 25%;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+}

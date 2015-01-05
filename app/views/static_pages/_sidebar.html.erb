@@ -1,0 +1,92 @@
+<div id="sidebar-wrapper">
+  <div class="sidebar-nav">
+      <div class="sidebar-brand"><a href="#">Rajanjamu</a></div>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!-- home -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a href="#collapseOne">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                Home
+              </a>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                Projects
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="#" class="list-group-item">CodeAstra</a>
+                <a href="#" class="list-group-item">Stanford Ignite</a>
+                <a href="#" class="list-group-item">Embrace Innovations</a>
+                <a href="#" class="list-group-item">IIT Madras</a>
+                <a href="#" class="list-group-item">Joblessness</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                Gallery
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog -->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a href="#collapseOne">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                Blog
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-about">
+        <div><%= image_tag "rajan.jpg", class: "about-img" %></div>
+        <div class="about-title">Rajan Gupta</div>
+        <div class="about-desc">Smile on the face, pride in the heart, home in the mind</div>
+        <div class="sidebar-social">
+          <%= link_to image_tag("64/64-facebook.png", class: "icon-img"), class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-googleplus.png", class: "icon-img"), class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-twitter.png", class: "icon-img"), class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-github.png", class: "icon-img"), class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-linkedin.png", class: "icon-img"), class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-mail.png", class: "icon-img"), class: "social-icon" %>
+        </div>
+      </div>
+
+
+  </div>
+</div>

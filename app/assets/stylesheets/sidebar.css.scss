@@ -1,0 +1,50 @@
+@media(max-width:992px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+#sidebar {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position:relative;
+  border-right: 1px solid $color-silver;
+
+  .site-header {
+    margin: 20% 0;
+    padding: 0 20%;
+
+    .site-branding {
+      .site-title {
+        font-size: 22px;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.1852;
+
+        a {
+          text-decoration: none;
+          &:link, &:visited {
+            text-decoration: none;
+            color: $color-black;
+          }
+          &:hover {
+            text-decoration: none;
+            color: $color-light-black;
+          }
+          &:active {
+            text-decoration: none;
+            color: $color-black;
+          }
+        }
+      }
+
+      .site-description {
+        margin: 0.5em 0 0 0;
+        color: $color-light-black;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
