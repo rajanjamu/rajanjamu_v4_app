@@ -1,70 +1,73 @@
 <div id="sidebar-wrapper">
   <div class="sidebar-nav">
-      <div class="sidebar-brand"><a href="#">Rajanjamu</a></div>
+      <div class="sidebar-brand"><a href="/">Rajanjamu</a></div>
 
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <!-- home -->
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a href="#collapseOne">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseHome" aria-expanded="true" aria-controls="collapseHome">
                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 Home
               </a>
             </h4>
           </div>
+          <div id="collapseHome" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingHome">
+            <div class="panel-body"></div>
+          </div>
         </div>
 
         <!-- Projects -->
         <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
+          <div class="panel-heading" role="tab" id="headingProjects">
             <h4 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span>
                 Projects
               </a>
             </h4>
           </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div id="collapseProjects" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingProjects">
             <div class="panel-body">
               <ul class="list-group">
-                <a href="#" class="list-group-item">CodeAstra</a>
-                <a href="#" class="list-group-item">Stanford Ignite</a>
-                <a href="#" class="list-group-item">Embrace Innovations</a>
-                <a href="#" class="list-group-item">IIT Madras</a>
-                <a href="#" class="list-group-item">Joblessness</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>CodeAstra</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Stanford Ignite</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Embrace Innovations</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>IIT Madras</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Joblessness</a>
               </ul>
             </div>
           </div>
         </div>
 
         <!-- Gallery -->
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingThree">
+        <!-- <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingGallery">
             <h4 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseGallery" aria-expanded="false" aria-controls="collapseGallery">
                 <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
                 Gallery
               </a>
             </h4>
           </div>
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div id="collapseGallery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingGallery">
             <div class="panel-body">
               <ul class="list-group">
-                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Morbi leo risus</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Vestibulum at eros</a>
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Blog -->
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-              <a href="#collapseOne">
+              <a href="http://www.artool.in" target="_blank">
                 <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                 Blog
               </a>
@@ -76,14 +79,14 @@
       <div class="sidebar-about">
         <div><%= image_tag "rajan.jpg", class: "about-img" %></div>
         <div class="about-title">Rajan Gupta</div>
-        <div class="about-desc">Smile on the face, pride in the heart, home in the mind</div>
+        <div class="about-desc">Smile on the face, pride in the heart, hope in the mind</div>
         <div class="sidebar-social">
-          <%= link_to image_tag("64/64-facebook.png", class: "icon-img"), class: "social-icon" %><!--
-          --><%= link_to image_tag("64/64-googleplus.png", class: "icon-img"), class: "social-icon" %><!--
-          --><%= link_to image_tag("64/64-twitter.png", class: "icon-img"), class: "social-icon" %><!--
-          --><%= link_to image_tag("64/64-github.png", class: "icon-img"), class: "social-icon" %><!--
-          --><%= link_to image_tag("64/64-linkedin.png", class: "icon-img"), class: "social-icon" %><!--
-          --><%= link_to image_tag("64/64-mail.png", class: "icon-img"), class: "social-icon" %>
+          <%= link_to image_tag("64/64-facebook.png", class: "icon-img"), "https://www.facebook.com/rajanjamuindia", target: "_blank", class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-googleplus.png", class: "icon-img"), "https://plus.google.com/103989021022793667493", target: "_blank", class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-twitter.png", class: "icon-img"), "https://twitter.com/rajanjamu1", target: "_blank", class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-github.png", class: "icon-img"), "https://github.com/rajanjamu", target: "_blank", class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-linkedin.png", class: "icon-img"), "https://www.linkedin.com/profile/view?id=212187908&trk=nav_responsive_tab_profile", target: "_blank", class: "social-icon" %><!--
+          --><%= link_to image_tag("64/64-mail.png", class: "icon-img"), "mailto:rajanjamu@gmail.com", class: "social-icon" %>
         </div>
       </div>
 

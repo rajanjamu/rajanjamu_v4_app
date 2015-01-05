@@ -2,6 +2,15 @@ $color-black: #000;
 $color-light-black: #7f8c8d;
 $color-white: #fff;
 $color-silver: #bdc3c7;
-$color-blue: #78C8E6;
+
+$color-blue: #3498db;
+$color-light-blue: lighten($color-blue, 10%);
+
+$color-green: #1abc9c;
+$color-light-green: lighten($color-green, 10%);
+
+$color-orange: #f39c12;
+$color-light-orange: lighten($color-orange, 10%);
+
 $color-clouds: #ecf0f1;
 $color-light-clouds: lighten($color-clouds, 2%);

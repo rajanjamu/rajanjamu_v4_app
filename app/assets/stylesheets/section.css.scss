@@ -1,0 +1,22 @@
+section {
+  position: absolute;
+  right: 0;
+  background-image: url('spiritual.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 75%;
+
+  .home {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 40vh;
+    color: white;
+  }
+}
+
+@media(max-width:992px) {
+  section {
+    width: 100%;
+  }
+}
