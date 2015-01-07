@@ -1,0 +1,30 @@
+#home {
+  position: absolute;
+  right: 0;
+  padding: 15%;
+  // background: $color-clouds;
+  // background-image: url('spiritual.png');
+  // background-size: cover;
+  // background-position: 50% 50%;
+  height: 100%;
+  width: 75%;
+
+  .quote {
+    padding: 5%;
+
+    .statement {
+      font-size: 1.65em;
+      text-align: justify;
+    }
+    .author {
+      text-align: right;
+    }
+
+  }
+}
+
+@media(max-width:992px) {
+  #home {
+    width: 100%;
+  }
+}
