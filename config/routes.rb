@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'projects' => 'static_pages/projects'
+  get 'projects' => 'static_pages#projects'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

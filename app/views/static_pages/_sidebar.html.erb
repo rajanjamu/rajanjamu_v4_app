@@ -4,7 +4,7 @@
 
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <!-- home -->
-        <div class="panel panel-default">
+        <!-- <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseHome" aria-expanded="true" aria-controls="collapseHome">
@@ -16,10 +16,18 @@
           <div id="collapseHome" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingHome">
             <div class="panel-body"></div>
           </div>
+        </div> -->
+
+        <div class="non-panel">
+          <ul class="list-group">
+            <%= link_to content_tag(:span, "", class: "glyphicon glyphicon-home")+"Home", root_path, class: "list-group-item" %>
+            <%= link_to content_tag(:span, "", class: "glyphicon glyphicon-folder-open")+"Projects", projects_path, class: "list-group-item" %>
+            <%= link_to content_tag(:span, "", class: "glyphicon glyphicon-pencil")+"Blog", "http://www.artool.in", target: "_blank", class: "list-group-item" %>
+          </ul>
         </div>
 
         <!-- Projects -->
-        <div class="panel panel-default">
+        <!-- <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingProjects">
             <h4 class="panel-title">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
@@ -31,7 +39,7 @@
           <div id="collapseProjects" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingProjects">
             <div class="panel-body">
               <ul class="list-group">
-                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>CodeAstra</a>
+                <%#= link_to content_tag(:span, "", class: "glyphicon glyphicon-folder-open")+"CodeAstra", projects_path, class: "list-group-item" %>
                 <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Stanford Ignite</a>
                 <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>Embrace Innovations</a>
                 <a href="#" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>IIT Madras</a>
@@ -39,7 +47,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Gallery -->
         <!-- <div class="panel panel-default">
@@ -64,7 +72,7 @@
         </div> -->
 
         <!-- Blog -->
-        <div class="panel panel-default">
+<!--         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
               <a href="http://www.artool.in" target="_blank">
@@ -73,7 +81,7 @@
               </a>
             </h4>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="sidebar-about">
